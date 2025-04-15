@@ -1,0 +1,127 @@
+html {
+    overflow: hidden;
+}
+
+#myVideo {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    z-index: -1;
+}
+
+.fa-expand {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 36px;
+    color: pink;
+}
+
+.fa-expand:hover {
+    cursor: pointer;
+}
+
+#section1 {
+    position: absolute;
+    bottom: 0%;
+    left: 0%;
+}
+
+#japan {
+    bottom: 10%;
+    left: 10%;
+}
+
+.hidden {
+    opacity: 0;
+}
+
+.showing {
+    opacity: 1;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+#loadingscreen {
+    background:black;
+    background-size: 1200px 750px;
+}
+
+.fa-spinner {
+    padding-left: 500px;
+    padding-top: 300px;
+}
+
+p {
+    font-size: 30px;
+    display: inline-block;
+   color: white;
+   background-color: rgba(0,0,0,0.3);
+   border-radius: 8px;
+   padding: 0.2em 0.5em;
+   opacity: 0;
+   transition: opacity 0.3s ease, background-color 0.3s ease;
+}
+
+#line1, #line2 {
+    margin-left: 50px;
+}
+
+#line1 {
+    margin-top: 100px;
+}
+
+#line3, #line4 {
+    margin-left: 1100px;
+}
+
+#line3 {
+    margin-top: 300px;
+}
+
+#line5, #line6, #line7, #line8, #line9 {
+    position: absolute;
+}
+
+#line5 {
+    margin-left: 900px;
+    margin-top: -350px;
+}
+
+#line6 {
+    margin-left: 200px;
+    margin-top: -500px;
+}
+
+#line7{
+    margin-left: 550px;
+    margin-top: -400px;
+}
+
+#line8{
+    margin-left: 550px;
+    margin-top: -300px;
+}
+
+#line9{
+    margin-left: 560px;
+    margin-top: -400px;
+}
+
+#lightbulb {
+    position: fixed;
+    font-size: 22px;
+    color: white;
+    margin-left: 1400px;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+#lightbulb:hover {
+    color: yellow;
+}
+
+.filtered {
+    filter: brightness(0.5) contrast(1.5) grayscale(50%);
+}
