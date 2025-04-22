@@ -1,0 +1,18 @@
+h1 {
+    font-family: "Manrope";
+    /* padding-left: 1100px; */
+}
+
+h2 {
+    font-family: "DM Sans";
+    font-weight: 400;
+}
+
+p {
+    font-family: "DM Sans";
+    font-weight: 200;
+}
+
+#cd {
+    padding-left: 250px;
+}

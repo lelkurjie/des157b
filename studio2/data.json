@@ -1,0 +1,47 @@
+{
+    "point1" : {
+        "time" : "12:00",
+        "song" : "James by Laufey",
+        "setting" : "Walking to Memeorial Union"
+    },
+    "point2" : {
+        "time" : "12:15",
+        "song" : "Knew Better / Forever Boy by Ariana Grande",
+        "setting" : "Arrived at the Memorial Union"
+    },
+    "point3" : {
+        "time" : "12:30",
+        "song" : "Fatal Trouble by Enhyphen",
+        "setting" : "Getting pizza"
+    },
+    "point4" : {
+        "time" : "12:45",
+        "song" : "Woseltelha by Haifa Wehbe",
+        "setting" : "Finding a seat"
+    },
+    "point5" : {
+        "time" : "1:00",
+        "song" : "Fall in Love Alone by Stacey Ryan",
+        "setting" : "Studying"
+    },
+    "point6" : {
+        "time" : "1:15",
+        "song" : "Bonfire by Wave to Earth",
+        "setting" : "Still studying"
+    },
+    "point7" : {
+        "time" : "1:30",
+        "song" : "Up by Aespa",
+        "setting" : "Texting roommates"
+    },
+    "point8" : {
+        "time" : "1:45",
+        "song" : "Off my Face by Justin Bieber",
+        "setting" : "Eating and on phone"
+    },
+    "point9" : {
+        "time" : "2:00",
+        "song" : "Same Dream, Same Mind, Same Night by Seventeen",
+        "setting" : "Studying"
+    }
+}
