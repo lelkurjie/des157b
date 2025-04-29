@@ -33,9 +33,9 @@ p {
 }
 
 select {
-    position: relative;
-    margin-left: 1100px;
-    margin-top: -500px;
+    position: absolute;
+    top: 120px;
+    right: 50px;
     /* padding-top: -500px; */
     padding: 12px;
     font-size: 16px;
