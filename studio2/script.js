@@ -1,47 +1,42 @@
-let globalData;
+(function(){
+    'use strict';
 
-async function getData() {
-    const response = await fetch('data.json');
-    const data = await response.json();
-    globalData = data;
+    let globalData;
 
-    updateDisplay(data.point1);
+    async function getData() {
+        const response = await fetch('data.json');
+        const data = await response.json();
+        globalData = data;
 
-    createSelectList(data);
-}
+        const values = Object.values(data); 
+        updateDisplay(values[0]); 
 
-function updateDisplay(point) {
-    const [songTitle, artist] = splitSongArtist(point.song);
-    document.querySelector("#song").innerHTML = songTitle;
-    document.querySelector("#artist").innerHTML = artist;
-    document.querySelector("p").innerHTML = `Currently: ${point.setting}`;
-}
-
-function splitSongArtist(songStr) {
-    const parts = songStr.split(" by ");
-    if (parts.length === 2) {
-        return parts; 
-    } else {
-        return [songStr, "Unknown"]; 
-    }
-}
-
-function createSelectList(data) {
-    const select = document.createElement("select");
-
-    for (const key in data) {
-        const option = document.createElement("option");
-        option.value = key;
-        option.text = data[key].time;
-        select.appendChild(option);
+        createSelectList(values);
     }
 
-    select.addEventListener("change", function () {
-        const selectedPoint = data[this.value];
-        updateDisplay(selectedPoint);
-    });
+    function updateDisplay(point) {
+        document.querySelector('#song').innerHTML = point.song;
+        document.querySelector('p').innerHTML = 'Currently: ' + point.setting;
+    }
 
-    document.body.appendChild(select);
-}
+    function createSelectList(dataArray) {
+        const select = document.createElement('select');
 
-getData();
+        dataArray.forEach(function(entry, index) {
+            const option = document.createElement('option');
+            option.value = index;
+            option.textContent = entry.time;
+            select.appendChild(option);
+        });
+
+        select.addEventListener('change', function() {
+            var selectedPoint = dataArray[this.value];
+            updateDisplay(selectedPoint);
+        });
+
+        document.body.appendChild(select);
+    }
+
+    getData();
+
+})();
