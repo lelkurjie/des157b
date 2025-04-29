@@ -50,4 +50,14 @@ select {
     background-color: #c7c7c7;
     border-color: #e0e0e0;
   }
+
+  #album {
+    max-width: 545px;
+    z-index: -9;
+    position: relative;
+    margin-top: -3000px;
+    padding-top: -3000px;
+    padding-bottom: 180px;
+    margin-left: 120px;
+  }
   
