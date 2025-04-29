@@ -1,18 +1,30 @@
+html {
+    background-image: url("images/bg.png");
+    background-size: cover;
+}
+
 h1 {
     font-family: "Manrope";
     /* padding-left: 1100px; */
+    color: white;
+    padding-left: 1100px;
 }
 
 h2 {
     font-family: "DM Sans";
     font-weight: 400;
+    color: white;
+    padding-left: 1100px;
 }
 
 p {
     font-family: "DM Sans";
     font-weight: 200;
+    color: white;
+    padding-left: 1100px;
 }
 
 #cd {
-    padding-left: 250px;
+    margin-top: -260px;
+    margin-left: -90px;
 }

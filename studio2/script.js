@@ -5,10 +5,8 @@ async function getData() {
     const data = await response.json();
     globalData = data;
 
-    // Initially show point1
     updateDisplay(data.point1);
 
-    // Create dropdown to switch points
     createSelectList(data);
 }
 
@@ -22,9 +20,9 @@ function updateDisplay(point) {
 function splitSongArtist(songStr) {
     const parts = songStr.split(" by ");
     if (parts.length === 2) {
-        return parts; // [song, artist]
+        return parts; 
     } else {
-        return [songStr, "Unknown"]; // fallback
+        return [songStr, "Unknown"]; 
     }
 }
 
