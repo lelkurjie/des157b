@@ -7,24 +7,46 @@ h1 {
     font-family: "Manrope";
     /* padding-left: 1100px; */
     color: white;
-    padding-left: 1100px;
+    padding-left: 1000px;
+    padding-top: 300px;
 }
 
 h2 {
     font-family: "DM Sans";
     font-weight: 400;
     color: white;
-    padding-left: 1100px;
+    padding-left: 1000px;
+    /* padding-top: 350px; */
 }
 
 p {
     font-family: "DM Sans";
     font-weight: 200;
     color: white;
-    padding-left: 1100px;
+    padding-left: 1000px;
+    /* padding-top: 350px; */
 }
 
 #cd {
-    margin-top: -260px;
+    margin-top: -560px;
     margin-left: -90px;
 }
+
+select {
+    margin-left: 1000px;
+    padding: 8px 12px;
+    font-size: 16px;
+    border-radius: 8px;
+    border: 2px solid #e0e0e0;
+    background-color: #f0f0f0;
+    color: #333;
+    margin-top: 16px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  
+  select:hover {
+    background-color: #e0e0e0;
+    border-color: #e0e0e0;
+  }
+  
