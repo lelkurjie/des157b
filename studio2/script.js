@@ -17,6 +17,10 @@
     function updateDisplay(point) {
         document.querySelector('#song').innerHTML = point.song;
         document.querySelector('p').innerHTML = 'Currently: ' + point.setting;
+
+        const image = document.querySelector('#album');
+        image.src = point.image; 
+        image.alt = point.song;
     }
 
     function createSelectList(dataArray) {

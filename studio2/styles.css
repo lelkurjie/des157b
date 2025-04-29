@@ -34,6 +34,7 @@ p {
 
 select {
     margin-left: 1000px;
+    margin-top: -600px;
     padding: 8px 12px;
     font-size: 16px;
     border-radius: 8px;
@@ -46,7 +47,7 @@ select {
   }
   
   select:hover {
-    background-color: #e0e0e0;
+    background-color: #c7c7c7;
     border-color: #e0e0e0;
   }
   

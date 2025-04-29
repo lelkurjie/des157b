@@ -2,46 +2,55 @@
     "point1" : {
         "time" : "12:00",
         "song" : "James by Laufey",
-        "setting" : "Walking to Memorial Union"
+        "setting" : "Walking to Memorial Union",
+        "image" : "images/laufey.jpg"
     },
     "point2" : {
         "time" : "12:15",
         "song" : "Knew Better / Forever Boy by Ariana Grande",
-        "setting" : "Arrived at the Memorial Union"
+        "setting" : "Arrived at the Memorial Union",
+        "image" : "images/ariana.webp"
     },
     "point3" : {
         "time" : "12:30",
         "song" : "Fatal Trouble by Enhyphen",
-        "setting" : "Getting pizza"
+        "setting" : "Getting pizza",
+        "image" : "images/enhyphen.jpg"
     },
     "point4" : {
         "time" : "12:45",
         "song" : "Woseltelha by Haifa Wehbe",
-        "setting" : "Finding a seat"
+        "setting" : "Finding a seat",
+        "image" : "images/haifa.jpg"
     },
     "point5" : {
         "time" : "1:00",
         "song" : "Fall in Love Alone by Stacey Ryan",
-        "setting" : "Studying"
+        "setting" : "Studying",
+        "image" : "images/stacey.jpg"
     },
     "point6" : {
         "time" : "1:15",
         "song" : "Bonfire by Wave to Earth",
-        "setting" : "Still studying"
+        "setting" : "Still studying",
+        "image" : "images/w2e.jpg"
     },
     "point7" : {
         "time" : "1:30",
         "song" : "Up by Aespa",
-        "setting" : "Texting roommates"
+        "setting" : "Texting roommates",
+        "image" : "images/aespa.jpg"
     },
     "point8" : {
         "time" : "1:45",
         "song" : "Off my Face by Justin Bieber",
-        "setting" : "Eating and on phone"
+        "setting" : "Eating and on phone",
+        "image" : "images/justin.jpg"
     },
     "point9" : {
         "time" : "2:00",
         "song" : "Same Dream, Same Mind, Same Night by Seventeen",
-        "setting" : "Studying"
+        "setting" : "Studying",
+        "image" : "images/seventeen.jpg"
     }
 }
