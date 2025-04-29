@@ -33,12 +33,11 @@ p {
 }
 
 select {
-    margin-left: 900px;
-    margin-bottom: 500px;
-    padding: 8px 12px;
+    margin-left: 1100px;
+    margin-bottom: 1000px;
+    padding: 12px;
     font-size: 16px;
-    border-radius: 8px;
-    border: 2px solid #e0e0e0;
+    border-radius: 10px;
     background-color: #f0f0f0;
     color: #333;
     margin-top: 16px;
@@ -48,7 +47,6 @@ select {
   
   select:hover {
     background-color: #c7c7c7;
-    border-color: #e0e0e0;
   }
 
   #album {
