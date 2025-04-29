@@ -34,8 +34,8 @@ p {
 
 select {
     position: absolute;
-    top: 700px;
-    right: 200px;
+    top: 10px;
+    right: 10px;
     /* padding-top: -500px; */
     padding: 12px;
     font-size: 16px;
