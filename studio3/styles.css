@@ -1,0 +1,73 @@
+body {
+    margin: 0;
+    font-family: sans-serif;
+  }
+
+html {
+  background-image: url(images/bg.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.box {
+  width: 495px;
+  height: 405px;
+  border-radius: 50px;
+  border: 1px solid #000;
+  background: rgba(95, 130, 61, 0.40);
+  box-shadow: 10px 10px 20px 0px rgba(0, 0, 0, 0.25);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  position: relative;
+  padding: 40px 20px; 
+  justify-content: space-evenly;
+}
+
+#box1 {
+  margin: 1050px 0 0 118px;
+}
+
+#box2 {
+  margin: 100px 0 0 auto;
+  margin-right: 118px;
+}
+
+#box3 {
+  margin: 100px 0 0 118px;
+}
+
+#box4 {
+  margin: 100px 0 0 auto;
+  margin-right: 118px;
+}
+
+#box5 {
+  margin: 100px 0 40px 118px;
+}
+
+
+#teapot {
+  margin-top: 40px;
+}
+
+h2 {
+   font-family: "Advent Pro";
+   font-size: 40px;
+   font-weight: 400;
+   padding-top: 50px;
+   margin: 5px 5px;
+}
+
+p {
+  font-family: "Gruppo";
+  font-size: 22px;
+  color: #5E5E5E;
+  margin: 0;
+  /* padding-bottom: 80px; */
+}
+
+#sift {
+  width: 250px;
+}

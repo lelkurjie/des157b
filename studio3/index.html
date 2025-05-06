@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Library Liberty</title>
+
+    <!-- Normalize CSS for browser compatability -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" rel="stylesheet">
+
+    <!-- Add link to any google fonts used here -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Gruppo&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Advent+Pro:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+    <!-- My Styles -->
+    <link href="styles.css" rel="stylesheet">
+
+    <!-- Meta tag for mobile support -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- My Script -->
+    <script src="script.js" defer></script>
+
+    <!-- aos -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+    <link href="https://cdn.jsdelivr.net/npm/hover.css@2.3.2/css/hover-min.css" rel="stylesheet">
+</head>
+<body>
+
+    <div class="box" id="box1" data-aos="fade-up">
+      <img src="images/teapot.png" id="teapot" class="hvr-bounce-in" alt="teapot">
+      <h2>heat water</h2>
+      <p> 158 - 176 F</p>
+    </div>
+
+    <div class="box" id="box2" data-aos="fade-up">
+      <img src="images/steam.png" id="steam" class="hvr-bounce-in" alt="steam">
+      <h2>warm whisk and bowl</h2>
+      <p> 158 - 176 F</p>
+    </div>
+
+    <div class="box" id= "box3" data-aos="fade-up">
+      <img src="images/sift.png" id="sift" class="hvr-bounce-in" alt="sift">
+      <h2>sift matcha</h2>
+      <p>2 scoops</p>
+    </div>
+
+    <div class="box" id= "box4" data-aos="fade-up">
+      <img src="images/whisk.png" id="whisk" class="hvr-bounce-in" alt="whisk">
+      <h2>add water and whisk</h2>
+      <p>60 ml, 10-20 seconds</p>
+    </div>
+
+    <div class="box" id= "box5" data-aos="fade-up">
+      <img src="images/matcha.png" id="matcha" class="hvr-bounce-in" alt="matcha">
+      <h2>your matcha is done!</h2>
+      <p>keep as is, add ice, or add milk</p>
+    </div>
+
+
+    <!-- Add script right before closing </body> tag, and initialize AOS: -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+
+  <footer>
+    <a href="https://ianlunn.github.io/Hover/">Hover Library</a>
+    <a href="https://michalsnik.github.io/aos/">AOS</a>
+  </footer>
+</body>
+
+
+</html>
