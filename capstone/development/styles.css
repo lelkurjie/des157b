@@ -1,0 +1,136 @@
+html {
+    background-image: url("images2/gradient.png");
+    background-repeat: no-repeat;
+}
+
+h1 {
+    color: #0A9103;
+    font-family: Amethysta;
+    font-size: 96px;
+    font-weight: 400;
+    text-align: center;
+}
+
+h2 {
+    color: #C623A2;
+    font-family: "Old Standard TT";
+    font-size: 36px;
+    font-weight: 400;
+    text-align: center;
+}
+
+#start {
+    border: 1px solid #0A9103;
+    border-radius: 15px;
+    padding: 10px 8px;
+    padding-top: 15px;
+    width: 150px;
+    margin-left: 630px;
+    transition: all 0.3s ease;
+    cursor: pointer;
+    box-shadow: 0 0 0 transparent;
+}
+
+#start:hover {
+    transform: scale(1.05);
+    background-color: #fde3ff;
+    box-shadow: 0 4px 12px rgba(10, 145, 3, 0.3);
+    color: #076B02;
+}
+
+body {
+    margin-top: 200px;
+}
+
+.hidden {
+    display: none;
+}
+
+.showing1 {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-image: url("images2/overlay1.png");
+  background-size: fill;
+  z-index: 1000;
+  text-align: center;
+  padding-top: 100px;
+}
+
+.showing2 {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgb(252, 216, 216);
+    z-index: 1000;
+    text-align: center;
+    padding-top: 100px;
+}
+
+.showing3 {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgb(252, 216, 216);
+    z-index: 1000;
+    text-align: center;
+    padding-top: 100px;
+}
+  
+.showing4 {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgb(216, 219, 252);
+    z-index: 1000;
+    text-align: center;
+    padding-top: 100px;
+}
+
+.showing5 {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgb(252, 216, 246);
+    z-index: 1000;
+    text-align: center;
+    padding-top: 100px;
+}
+
+.showing6 {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgb(239, 252, 216);
+    z-index: 1000;
+    text-align: center;
+    padding-top: 100px;
+}
+
+.showing7 {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgb(252, 250, 216);
+    z-index: 1000;
+    text-align: center;
+    padding-top: 100px;
+}
+  
+#overlay2 {
+    background-color: #fef6ff; 
+}
