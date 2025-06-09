@@ -11,6 +11,15 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Amethysta&family=Old+Standard+TT:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <!-- Parsley.js -->
+    <script src="https://cdn.jsdelivr.net/npm/parsleyjs@2/dist/parsley.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/parsleyjs/src/parsley.css">
+
     <link href="styles.css" rel="stylesheet">
     <script src="script.js" defer></script>
     
@@ -23,45 +32,45 @@
     </section>
 
     <div id="overlay1" class="hidden">
-        <p>This is the first overlay!</p>
-        <button id="nextBtn">➡️</button>
+
+        <i class="fa-solid fa-angle-right fa-2x" id="nextBtn"></i>
     </div>
       
     <div id="overlay2" class="hidden">
-        <p>This is the second overlay!</p>
-        <button id="backBtn2">⬅️</button>
-        <button id="nextBtn2">➡️</button>
+        <i class="fa-solid fa-angle-left fa-2x" id="backBtn2"></i>
+        <i class="fa-solid fa-angle-right fa-2x" id="nextBtn2"></i>
+
+        <h2>What are your current goals?</h2>
+
+        <form id="goalForm" data-parsley-validate action="#">
+            <input type="text" id="goalInput" name="goal" required placeholder="Type your goal here">
+            <button type="submit">Add Goal</button>
+          </form>
+
+        <!-- <div id="goalList">
+            <h3>Your Goals:</h3>
+        </div> -->
+
     </div>
 
+
     <div id="overlay3" class="hidden">
-        <p>This is the third overlay!</p>
-        <button id="backBtn3">⬅️</button>
-        <button id="nextBtn3">➡️</button>
+        <i class="fa-solid fa-angle-left fa-2x" id="backBtn3"></i>
+        <i class="fa-solid fa-angle-right fa-2x" id="nextBtn3"></i>
     </div>
 
     <div id="overlay4" class="hidden">
-        <p>This is the fourth overlay!</p>
-        <button id="backBtn4">⬅️</button>
-        <button id="nextBtn4">➡️</button>
+        <i class="fa-solid fa-angle-left fa-2x" id="backBtn4"></i>
+        <i class="fa-solid fa-angle-right fa-2x" id="nextBtn4"></i>
     </div>
 
     <div id="overlay5" class="hidden">
-        <p>This is the fifth overlay!</p>
-        <button id="backBtn5">⬅️</button>
-        <button id="nextBtn5">➡️</button>
+        <i class="fa-solid fa-angle-right fa-2x" id="nextBtn5"></i>
     </div>
         
     <div id="overlay6" class="hidden">
-        <p>This is the sixth overlay!</p>
-        <!-- <button id="backBtn6">⬅️</button>
-        <button id="nextBtn6">➡️</button> -->
     </div>
 
-    <!-- <div id="overlay7" class="hidden">
-        <p>This is the seventh overlay!</p>
-    </div> -->
-
-    </div>
 
 
     <div id="user-test-overlay">

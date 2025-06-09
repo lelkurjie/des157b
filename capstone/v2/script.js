@@ -14,9 +14,49 @@
     const backBtn2 = document.getElementById('backBtn2');
     const backBtn3 = document.getElementById('backBtn3');
     const backBtn4 = document.getElementById('backBtn4');
-    const backBtn5 = document.getElementById('backBtn5');
+
+
+    
+
+
+    //input form 
+
+    const data = {};
+    let counter = 1;
+
+    document.querySelector('#goalForm').addEventListener('submit', function(event){
+      event.preventDefault();
+
+      console.log('submitted form');
+
+      const inputElement = document.querySelector('#goalForm input');
+      const answer = inputElement.value;
+
+      const dataPoints = Object.keys(data);
+      console.log(dataPoints);
+      
+      data[`input${counter}`] = answer;
+      counter++;
+
+      console.log('data object:', data);
+      console.log('data points:', Object.keys(data));
+
+      const displayArea = document.getElementById('displayArea');
+      const p = document.createElement('p');
+      p.textContent = answer;
+      displayArea.appendChild(p);
+     
+       inputElement.value = ''; 
+       
+    });
+
+
+      
+    
+
+    //moving from page to page
   
-    // Navigation logic
+    
     start.addEventListener('click', function(event){
       event.preventDefault();
       overlay.classList.remove('hidden');
@@ -78,25 +118,8 @@
       document.getElementById('overlay3').classList.remove('hidden');
       document.getElementById('overlay3').classList.add('showing3');
     });
+
   
-    backBtn5.addEventListener('click', function() {
-      document.getElementById('overlay5').classList.remove('showing5');
-      document.getElementById('overlay5').classList.add('hidden');
-      document.getElementById('overlay4').classList.remove('hidden');
-      document.getElementById('overlay4').classList.add('showing4');
-    });
-  
-    // 🟢 Form behavior
-    $('#goalForm').on('submit', function(e) {
-      e.preventDefault();
-  
-      if ($(this).parsley().isValid()) {
-        const goalText = $('#goalInput').val().trim();
-        if (goalText) {
-          $('#goalList').append(`<div class="goal">${goalText}</div>`);
-          $('#goalInput').val('');
-        }
-      }
-    });
+
   
   })();

@@ -46,6 +46,7 @@ body {
     display: none;
 }
 
+
 .showing1 {
   position: fixed;
   top: 0;
@@ -119,6 +120,14 @@ body {
     padding-top: 100px;
 }
 
+
+.showing1, .showing2, .showing3, .showing4, .showing5, .showing6 {
+    z-index: 1000;
+    position: fixed;
+    padding-top: 60vh;
+    text-align: center;
+}
+
 /* .showing7 {
     position: fixed;
     top: 0;
@@ -136,6 +145,25 @@ body {
 }
 
 
+.nextBtn {
+    display: inline-block;
+    margin-left: 80%; /* Push it to the right */
+  margin-top: 200px;
+}
+
+.nextBtn2, .nextBtn3, .nextBtn4, .nextBtn5 {
+    margin-left: 80%;
+    margin-right: auto;
+    /* font-size: 48px; */
+    cursor: pointer;
+}
+
+#backBtn2, #backBtn3, #backBtn4, #backBtn5 {
+    margin-right: 80%;
+    margin-left: auto;
+    /* font-size: 48px; */
+    cursor: pointer;
+}
 
 /* user test overlat */
 #user-test-overlay {
@@ -175,4 +203,11 @@ body {
     border-radius: 0.5rem;
     cursor: pointer;
     font-size: 1rem;
+  }
+
+  .goal {
+    background: #f0f0f0;
+    padding: 8px;
+    margin-top: 6px;
+    border-radius: 5px;
   }
