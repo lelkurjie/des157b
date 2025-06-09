@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Version 1 Capstone</title>
+
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Amethysta&family=Old+Standard+TT:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    
+    <link href="styles.css" rel="stylesheet">
+    <script src="script.js" defer></script>
+    
+</head>
+<body>
+    <section id="landing">
+        <div id="landingdiv">
+
+            <div class="gradient-background">
+            </div>
+
+            <div class="overlay-text">
+                <h2 class="subtitle">YOUR</h2>
+                <h1 id="title">SUCCESS DRAGON</h1>
+                <h2 class = "subtitle" id="start">START</h2>
+            </div>
+        </div>   
+    </section>
+
+
+    <div id="overlay1" class="hidden">
+
+        <i class="fa-solid fa-angle-right fa-2x" id="nextBtn"></i>
+
+        <div id="content">
+            <h1>What Is Success?</h1>
+            <p>Success is the achievement of goals that bring a sense of fulfillment, purpose, and growth. It is not defined by a single outcome or material measure, but by the personal meaning it holds for each individual. For some, success might mean reaching a career milestone, while for others, it could be nurturing relationships, maintaining well-being, or overcoming internal challenges. True success is often rooted in persistence, self-awareness, and alignment with one’s values. It evolves over time, reflecting who we are and who we aspire to become.</p>
+            <h1>Measuring Your Own Success</h1>
+            <p>Defining your own success means stepping away from society’s expectations and instead choosing goals that genuinely reflect your values, passions, and purpose. It’s about recognizing that success doesn’t look the same for everyone—what matters is what feels meaningful to you. Whether it's building a creative life, prioritizing mental health, growing through challenges, or simply finding balance, your version of success should align with who you are and what you care about. When you define success on your own terms, you gain the freedom to pursue a life that is authentic, fulfilling, and uniquely yours.</p>
+        </div>
+    </div>
+      
+    <div id="overlay2" class="hidden">
+        <i class="fa-solid fa-angle-left fa-2x" id="backBtn2"></i>
+        <i class="fa-solid fa-angle-right fa-2x" id="nextBtn2"></i>
+
+        <div id="content2">
+
+            <h1>What are your current goals?</h1>
+
+            <div id="contentContainer">
+                <div id="displayArea"></div>
+                    <form id="goalForm">
+                        <input type="text" id="goalInput" name="goal" required placeholder="Type your goal here"> 
+                        <button type="submit" id="submit">Add Goal</button>
+                    </form>
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <div id="overlay3" class="hidden">
+        <i class="fa-solid fa-angle-left fa-2x" id="backBtn3"></i>
+        <i class="fa-solid fa-angle-right fa-2x" id="nextBtn3"></i>
+
+        <div id="content3">
+
+            <h1>What Are You Successful In?</h1>
+
+            <div id="contentContainer2">
+                <div id="displayArea2"></div>
+                    <form id="goalForm2">
+                        <input type="text" id="goalInput2" name="goal" required placeholder="Type Successes Here"> 
+                        <button type="submit" id="submit2">Add </button>
+                    </form>
+            </div>
+
+        </div>
+        
+    </div>
+
+    <div id="overlay4" class="hidden">
+        <i class="fa-solid fa-angle-left fa-2x" id="backBtn4"></i>
+        <i class="fa-solid fa-check fa-2x" id="nextBtn4"></i>
+
+        <div id="content4">
+
+            <h1>Name Your Dragon</h1>
+
+            <div id="contentContainer3">
+                <div id="displayArea3"></div>
+                    <form id="goalForm3">
+                        <input type="text" id="goalInput3" name="goal" required placeholder="Type Name Here"> 
+                        <button type="submit" id="submit3">Confirm </button>
+                    </form>
+            </div>
+
+        </div>
+    </div>
+
+    <div id="overlay5" class="hidden">
+        <!-- <i class="fa-solid fa-angle-right fa-2x" id="nextBtn5"></i> -->
+         <p id="loadingtext" class="hidden">CREATING YOUR SUCCESS DRAGON . . .</p>
+    </div>
+        
+    <div id="overlay6" class="hidden">
+        <button id="addEntryBtn" title="Add Success or Goal">+</button>
+        
+        <h2 id="your">YOUR</h2>
+        <h1 id="successdragon">SUCCESS DRAGON</h1>
+        <img src="images2/egg.png" id="egg" alt="egg">
+        <h2 id="dragonNameDisplay" class="dragon-name"></h2>
+
+
+        <h1 class="h12">CURRENT GOALS</h1>
+        <div id="goalDisplay" class="entry-line"></div>
+        <h1 class="h12">MY SUCCESSES</h1>
+        <div id="successDisplay" class="entry-line"></div>
+    </div>
+
+    <div id="entryModal" class="hidden">
+        <div class="modal-content">
+          <h2>Add a New Entry</h2>
+          <div class="type-buttons">
+            <button id="selectGoal">Goal</button>
+            <button id="selectSuccess">Success</button>
+          </div>
+          <input type="text" id="entryInput" placeholder="Type your entry..." />
+          <div class="modal-actions">
+            <button id="confirmEntry">Add</button>
+            <button id="cancelEntry">Cancel</button>
+          </div>
+        </div>
+      </div>
+
+</body>
+</html>
